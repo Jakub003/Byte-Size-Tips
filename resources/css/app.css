@@ -1,3 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://unpkg.com/tippy.js@6/dist/tippy.css');
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@layer components {
+
+    /* Sroll Bar */
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    ::-webkit-scrollbar-track {
+
+        background: #cbd5e1;
+
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #94a3b8
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #60a5fa
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+
+    /* Chrome, Safari and Opera */
+    .scrollbar-hidden::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scrollbar-hidden {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+
+    .dark-transition {
+        @apply transition duration-500 ease-in-out;
+    }
+
+    .smooth-scroll {
+        scroll-behavior: smooth;
+    }
+}
