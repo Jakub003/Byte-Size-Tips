@@ -78,7 +78,7 @@
                 Amazing Development Stack
             </h1>
             <p class="text-lg text-center text-gray-600 ">
-                Utilize the latest technologies to build one of a kind web apps.
+                Utilize the latest technologies to build one of a kind web apps that delight your users.
             </p>
             <div class="grid grid-cols-2 gap-16 py-16 mb-0 text-center lg:grid-cols-6">
                 <div class="flex items-center justify-center">
@@ -97,10 +97,10 @@
                         class="block object-contain h-9 lg:h-16">
                 </div>
                 <div class="flex items-center justify-center">
-                    <img src="\images\logos\vue-js-logo.png" alt="Slack Logo" class="block object-contain h-12">
+                    <img src="\images\logos\vue-js-logo.png" alt="VueJS Logo" class="block object-contain h-12">
                 </div>
                 <div class="flex items-center justify-center">
-                    <img src="https://cdn.devdojo.com/tails/images/amazon.svg" alt="Amazon Logo"
+                    <img src="/images\logos\intertia-logo.png" alt="InertiaJS Logo"
                         class="block object-contain h-10 lg:h-16">
                 </div>
             </div>
@@ -114,22 +114,92 @@
         <div
             class="box-border flex flex-col items-center px-8 py-20 mx-auto leading-6 border-solid max-w-7xl xl:px-16 md:items-stretch md:justify-center md:py-24">
             <div class="relative pb-10">
-                <h5
-                    class="w-full mx-0 mt-0 mb-4 font-sans font-bold text-center text-purple-700 border-0 border-gray-200">
-                    Features
-                </h5>
-                <h2
-                    class="w-full m-0 font-sans text-4xl font-black leading-loose tracking-wide text-center text-gray-700 border-0 border-gray-200 sm:text-5xl">
-                    Amazing Features
-                </h2>
-                <p
-                    class="w-full max-w-xl mx-0 mx-auto mt-4 mb-0 font-sans text-sm font-medium leading-relaxed text-center text-gray-400 border-0 border-gray-200 lg:text-lg md:text-base">
-                    Check out our set of awesome features and tools. We are the industry leaders in providing quality
-                    tools, trusted and used by over 1,200 companies. We kind'of rock!
+                <h1 class="mb-3 text-3xl font-bold leading-tight text-center text-gray-900 md:text-4xl">
+                    Variety of Topics
+                </h1>
+                <p class="text-lg text-center text-gray-600 ">
+                    Explore how to build apps with the best practices from start to finish.
                 </p>
             </div>
 
             <div class="z-10 grid gap-5 md:grid-cols-6 lg:grid-cols-9">
+                <!-- Feature 4 -->
+                <a href="#" class="col-span-3 font-sans text-gray-700 bg-gray-50  hover:shadow-md rounded-3xl">
+                    <div
+                        class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
+                        <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="leading-6 text-center text-gray-700 align-middle stroke-current w-7 h-7"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M0 0h24v24H0z" stroke="none"></path>
+                                <path
+                                    d="M3 12h3M12 3v3M7.8 7.8L5.6 5.6M16.2 7.8l2.2-2.2M7.8 16.2l-2.2 2.2M12 12l9 3-4 2-2 4-3-9">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
+                            <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
+                                Inspiration
+                            </h6>
+                            <p
+                                class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
+                                Find insipration ect
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!-- Feature 2 -->
+                <div class="col-span-3 font-sans text-gray-700 bg-gray-50 rounded-3xl">
+                    <div
+                        class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
+                        <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="leading-6 text-center text-gray-700 align-middle stroke-current w-7 h-7"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M0 0h24v24H0z" stroke="none"></path>
+                                <path d="M7 12l5 5L22 7M2 12l5 5m5-5l5-5"></path>
+                            </svg>
+
+                        </div>
+                        <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
+                            <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
+                                Brainstorming
+                            </h6>
+                            <p
+                                class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
+                                Plan out your project
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-3 font-sans text-gray-700 bg-gray-50 rounded-3xl">
+                    <div
+                        class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
+                        <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="leading-6 text-center text-gray-700 align-middle stroke-current w-7 h-7"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M0 0h24v24H0z" stroke="none"></path>
+                                <path
+                                    d="M9 4.55a8 8 0 016 14.9M15 15v5h5M5.63 7.16v.01M4.06 11v.01M4.63 15.1v.01M7.16 18.37v.01M11 19.94v.01">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
+                            <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
+                                Workflow
+                            </h6>
+                            <p
+                                class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
+                                Set it, and forget it. Our automated tools will allow you to automate your workflow.
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <!-- Feature 1 -->
                 <div class="col-span-3 font-sans text-gray-700 bg-gray-50 rounded-3xl">
                     <div
@@ -147,7 +217,8 @@
                         </div>
                         <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
                             <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
-                                Projects</h6>
+                                Deployment
+                            </h6>
                             <p
                                 class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
                                 Take advantage of our unlimited projects for your tasks and automated workflow.
@@ -155,80 +226,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- Feature 2 -->
-                <div class="col-span-3 font-sans text-gray-700 bg-gray-50 rounded-3xl">
-                    <div
-                        class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
-                        <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="leading-6 text-center text-gray-700 align-middle stroke-current w-7 h-7"
-                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M0 0h24v24H0z" stroke="none"></path>
-                                <path d="M7 12l5 5L22 7M2 12l5 5m5-5l5-5"></path>
-                            </svg>
 
-                        </div>
-                        <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
-                            <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
-                                Tasks</h6>
-                            <p
-                                class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
-                                Unlimited tasks that perform some of your most important applications functionality.
-                            </p>
-                        </div>
-                    </div>
-                </div>
                 <!-- Feature 3 -->
-                <div class="col-span-3 font-sans text-gray-700 bg-gray-50 rounded-3xl">
-                    <div
-                        class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
-                        <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="leading-6 text-center text-gray-700 align-middle stroke-current w-7 h-7"
-                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M0 0h24v24H0z" stroke="none"></path>
-                                <path
-                                    d="M9 4.55a8 8 0 016 14.9M15 15v5h5M5.63 7.16v.01M4.06 11v.01M4.63 15.1v.01M7.16 18.37v.01M11 19.94v.01">
-                                </path>
-                            </svg>
-                        </div>
-                        <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
-                            <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
-                                Automation</h6>
-                            <p
-                                class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
-                                Set it, and forget it. Our automated tools will allow you to automate your workflow.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Feature 4 -->
-                <div class="col-span-3 font-sans text-gray-700 bg-gray-50 rounded-3xl">
-                    <div
-                        class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
-                        <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="leading-6 text-center text-gray-700 align-middle stroke-current w-7 h-7"
-                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M0 0h24v24H0z" stroke="none"></path>
-                                <path
-                                    d="M3 12h3M12 3v3M7.8 7.8L5.6 5.6M16.2 7.8l2.2-2.2M7.8 16.2l-2.2 2.2M12 12l9 3-4 2-2 4-3-9">
-                                </path>
-                            </svg>
-                        </div>
-                        <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
-                            <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
-                                Simple</h6>
-                            <p
-                                class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
-                                We've built one of the simplest tools to integrate into your current system.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+
+
                 <!-- Feature 5 -->
                 <div class="col-span-3 font-sans text-gray-700 bg-gray-50 rounded-3xl">
                     <div
@@ -244,7 +245,8 @@
                         </div>
                         <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
                             <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
-                                Fast</h6>
+                                Performance
+                            </h6>
                             <p
                                 class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
                                 We have the fastest response times than any other service in our industry.
@@ -270,7 +272,8 @@
                         </div>
                         <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
                             <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
-                                Reliable</h6>
+                                Distribution
+                            </h6>
                             <p
                                 class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
                                 We pride ourselves in our up-time metrics. We focus a lot of our energy on being
