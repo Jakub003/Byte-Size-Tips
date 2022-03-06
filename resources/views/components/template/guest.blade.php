@@ -79,7 +79,7 @@
                 <div class="flex flex-col justify-between text-center md:flex-row">
                     <p class="order-last text-sm leading-tight text-gray-500 md:order-first">
                         Crafted with ❤️ by
-                        <a href="https://devdojo.com/tails" class="text-white">DreamByte Labs</a> Team.
+                        <a href="https://dreambytelabs.com/" class="text-white">DreamByte Labs</a> Team.
 
                     </p>
                     <ul class="flex flex-row justify-center pb-3 -ml-4 -mr-4 text-sm">
