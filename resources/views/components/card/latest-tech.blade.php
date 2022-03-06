@@ -3,7 +3,7 @@
     'description' => 'Connnect 1000+ Apps',
 ])
 <a {{ $attributes }} href="#"
-    class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
+    class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100 hover:bg-slate-50">
     <div class="w-16 h-auto">
         {{ $slot }}
     </div>
