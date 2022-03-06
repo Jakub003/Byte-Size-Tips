@@ -20,8 +20,8 @@
     </style>
 </head>
 
-<body class="font-kumbh">
-    <div class="relative min-h-full overflow-hidden" x-data="{mobileMenu:false, darkMode:false}">
+<body class="font-kumbh relative">
+    <div class=" min-h-full overflow-hidden" x-data="{mobileMenu:false, darkMode:false}">
         <x-template.navigation />
 
 

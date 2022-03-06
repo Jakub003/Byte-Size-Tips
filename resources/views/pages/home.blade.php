@@ -457,7 +457,7 @@
     </section>
 
     <!-- Section 5 -->
-    <section class="py-12 bg-purple-600 sm:py-16 md:py-20 lg:py-24 pb-28">
+    {{-- <section class="py-12 bg-purple-600 sm:py-16 md:py-20 lg:py-24 pb-28">
         <div class="max-w-6xl px-8 mx-auto lg:px-16">
             <h2 class="mb-2 text-2xl font-bold text-center text-white md:text-3xl lg:text-4xl">Frequently Asked
                 Questions</h2>
@@ -507,7 +507,7 @@
             </div>
 
         </div>
-    </section>
+    </section> --}}
 
     <!-- Section 6 -->
 
