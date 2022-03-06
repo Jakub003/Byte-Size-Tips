@@ -5,7 +5,7 @@
                 <div class="flex space-x-2 itmes-center">
                     <img class=" h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                         alt="Workflow">
-                    <p class=" text-xl font-extrabold text-slate-800">Byte Size Tips</p>
+                    <p class="text-xl font-extrabold text-slate-800">Byte Size Tips</p>
                 </div>
             </a>
             <div class="flex space-x-20">
@@ -15,17 +15,17 @@
                         aria-current="page">
                         Home
                     </a>
-                    <a href="{{ route('roadmap') }}"
+                    <a href="#"
                         class=" inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium {{ Request::routeIs('roadmap')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}"
                         aria-current="page">
                         Roadmap
                     </a>
-                    <a href="{{ route('components') }}"
+                    <a href="#"
                         class=" inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium {{ Request::routeIs('components')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}"
                         aria-current="page">
                         Components
                     </a>
-                    <a href="{{ route('demos') }}"
+                    <a href="#"
                         class=" inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium {{ Request::routeIs('demos')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}"
                         aria-current="page">
                         Demos
@@ -90,20 +90,6 @@
                 class="bg-indigo-50 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
                 aria-current="page">
                 Home
-            </a>
-
-            <a
-                class=" cursor-pointer border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 flex pl-3 pr-4 py-2 border-l-4 text-base font-medium w-full">
-                <p x-tooltip.placement.right="tooltipCommingSoon">Reports</p>
-            </a>
-            <a
-                class=" cursor-pointer border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 flex pl-3 pr-4 py-2 border-l-4 text-base font-medium w-full">
-                <p x-tooltip.placement.right="tooltipCommingSoon">Watchlist</p>
-            </a>
-
-            <a
-                class=" cursor-pointer border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 flex pl-3 pr-4 py-2 border-l-4 text-base font-medium w-full">
-                <p x-tooltip.placement.right="tooltipCommingSoon">Resources</p>
             </a>
         </div>
     </section>
