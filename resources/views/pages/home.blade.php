@@ -115,7 +115,7 @@
             class="box-border flex flex-col items-center px-8 py-20 mx-auto leading-6 border-solid max-w-7xl xl:px-16 md:items-stretch md:justify-center md:py-24">
             <div class="relative pb-10">
                 <h1 class="mb-3 text-3xl font-bold leading-tight text-center text-gray-900 md:text-4xl">
-                    Variety of Topics
+                    Build Your Dream App
                 </h1>
                 <p class="text-lg text-center text-gray-600 ">
                     Explore how to build apps with the best practices from start to finish.
@@ -124,7 +124,8 @@
 
             <div class="z-10 grid gap-5 md:grid-cols-6 lg:grid-cols-9">
                 <!-- Feature 4 -->
-                <a href="#" class="col-span-3 font-sans text-gray-700 bg-gray-50  hover:shadow-md rounded-3xl">
+                <a href="#"
+                    class="col-span-3 font-sans text-gray-700 bg-gray-50  border border-transparent hover:border-slate-200 hover:shadow-sm rounded-3xl">
                     <div
                         class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
                         <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full">
@@ -144,13 +145,15 @@
                             </h6>
                             <p
                                 class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
-                                Find insipration ect
+                                Look for some ideas on how to design your app and discover free asset libraries for your
+                                project.
                             </p>
                         </div>
                     </div>
                 </a>
                 <!-- Feature 2 -->
-                <div class="col-span-3 font-sans text-gray-700 bg-gray-50 rounded-3xl">
+                <a href="#"
+                    class="col-span-3 font-sans text-gray-700 bg-gray-50  border border-transparent hover:border-slate-200 hover:shadow-sm rounded-3xl">
                     <div
                         class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
                         <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full">
@@ -169,13 +172,14 @@
                             </h6>
                             <p
                                 class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
-                                Plan out your project
+                                Create mockups, and a plan on how you will execute the development roadmap.
                             </p>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="col-span-3 font-sans text-gray-700 bg-gray-50 rounded-3xl">
+                <a href="#"
+                    class="col-span-3 font-sans text-gray-700 bg-gray-50  border border-transparent hover:border-slate-200 hover:shadow-sm rounded-3xl">
                     <div
                         class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
                         <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full">
@@ -195,13 +199,15 @@
                             </h6>
                             <p
                                 class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
-                                Set it, and forget it. Our automated tools will allow you to automate your workflow.
+                                Create a routine for working on your app, so you can balance life and work and not get
+                                burned out.
                             </p>
                         </div>
                     </div>
-                </div>
+                </a>
                 <!-- Feature 1 -->
-                <div class="col-span-3 font-sans text-gray-700 bg-gray-50 rounded-3xl">
+                <a href="#"
+                    class="col-span-3 font-sans text-gray-700 bg-gray-50  border border-transparent hover:border-slate-200 hover:shadow-sm rounded-3xl">
                     <div
                         class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
                         <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full">
@@ -217,21 +223,22 @@
                         </div>
                         <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
                             <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
-                                Deployment
+                                Demo
                             </h6>
                             <p
                                 class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
-                                Take advantage of our unlimited projects for your tasks and automated workflow.
+                                Create a functional concept demo, and don't worry about how it looks or performes.
                             </p>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <!-- Feature 3 -->
+
 
 
                 <!-- Feature 5 -->
-                <div class="col-span-3 font-sans text-gray-700 bg-gray-50 rounded-3xl">
+                <a href="#"
+                    class="col-span-3 font-sans text-gray-700 bg-gray-50  border border-transparent hover:border-slate-200 hover:shadow-sm rounded-3xl">
                     <div
                         class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
                         <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full">
@@ -245,17 +252,18 @@
                         </div>
                         <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
                             <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
-                                Performance
+                                Optimize
                             </h6>
                             <p
                                 class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
-                                We have the fastest response times than any other service in our industry.
+                                Impliment your UI/UX design, refactor your code and get your app ready to ship.
                             </p>
                         </div>
                     </div>
-                </div>
+                </a>
                 <!-- Feature 6 -->
-                <div class="col-span-3 font-sans text-gray-700 border-0 bg-gray-50 rounded-3xl">
+                <a href="#"
+                    class="col-span-3 font-sans text-gray-700 bg-gray-50  border border-transparent hover:border-slate-200 hover:shadow-sm rounded-3xl">
                     <div
                         class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
                         <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full">
@@ -272,16 +280,16 @@
                         </div>
                         <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
                             <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
-                                Distribution
+                                Scaling
                             </h6>
                             <p
                                 class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
-                                We pride ourselves in our up-time metrics. We focus a lot of our energy on being
-                                reliable.
+                                Cookie cutter process on how to deploy and scale your app when you launch it to the
+                                world.
                             </p>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
 
@@ -306,7 +314,7 @@
 
     </section>
 
-    <!-- Section 3 -->
+    {{-- <!-- Section 3 -->
     <section class="flex items-center justify-center py-20 bg-white min-w-screen">
         <div class="px-16 bg-white">
             <div class="container flex flex-col items-start mx-auto lg:items-center">
@@ -380,7 +388,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!-- Section 4 -->
     <section class="py-12 sm:py-16 bg-white">

@@ -78,7 +78,7 @@
                 </div>
                 <div class="flex flex-col justify-between text-center md:flex-row">
                     <p class="order-last text-sm leading-tight text-gray-500 md:order-first">
-                        Maintained with ❤️ by
+                        Crafted with ❤️ by
                         <a href="https://devdojo.com/tails" class="text-white">DreamByte Labs</a> Team.
 
                     </p>
