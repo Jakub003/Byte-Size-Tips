@@ -20,4 +20,4 @@ Route::get('/cheat-sheet/{article}/', function ($slug) {
 
     return view('pages/article-view', ['article' => $article]);
 
-})->name('cheat-sheet.article');
+})->where('article','[A-z_\-0-9]+')->name('cheat-sheet.article');
