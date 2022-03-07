@@ -24,7 +24,7 @@
     @if (isset($navigation))
         <section class="hidden lg:block w-1/6 relative">
             <div class="flex flex-col space-y-10 sticky top-24">
-                <div class="flex flex-col space-y-2 ">
+                <div class="flex flex-col space-y-2">
                     <h2 class="text-sm text-slate-300 font-bold">ON THIS PAGE</h2>
                     {{ $navigation }}
                 </div>

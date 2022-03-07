@@ -12,8 +12,7 @@
         </x-slot>
 
         <x-slot name="content">
-
-
+            {!! $article !!}
         </x-slot>
 
         <x-slot name="navigation">
