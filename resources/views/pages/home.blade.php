@@ -448,6 +448,25 @@
                     <img class="h-16 w-16" src="/images/logos/notion-2.svg" />
                 </x-card.latest-tech>
 
+                <x-card.latest-tech x-cloak x-show="viewAllGuides === true" name="Whimsical"
+                    description="Easy Wireframes">
+                    <img class="h-16 w-16" src="/images/logos/whimsical-logo.png" />
+                </x-card.latest-tech>
+
+                <x-card.latest-tech x-cloak x-show="viewAllGuides === true" name="Laragon"
+                    description="Simple Server Setup">
+                    <img class="h-16 w-16" src="/images/logos/laragon.svg" />
+                </x-card.latest-tech>
+
+                <x-card.latest-tech x-cloak x-show="viewAllGuides === true" name="Stripe"
+                    description="Payment Processing">
+                    <img class="h-16 w-16" src="/images/logos/stripe-4.svg" />
+                </x-card.latest-tech>
+
+                <x-card.latest-tech x-cloak x-show="viewAllGuides === true" name="php" description="Setup Tips">
+                    <div class="pt-6"><img class="h-10 w-16" src="/images/logos/php-1.svg" /></div>
+                </x-card.latest-tech>
+
             </div>
             <button @click="viewAllGuides = true" x-show="viewAllGuides === false"
                 class="px-8 py-4 sm:w-auto w-full text-center text-base font-medium inline-block rounded text-white hover:bg-blue-600 bg-blue-500">
