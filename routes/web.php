@@ -16,8 +16,13 @@ Route::get('/cheat-sheet/{article}/', function ($slug) {
         return redirect('/');
     }
 
-    $article = file_get_contents($path);
+    $article = cache()->remember("article.{$slug}", now()->addMinutes(20), function() use($path) {
+        var_dump(('file_get_contents'));
+        return file_get_contents($path);
+    });
 
-    return view('pages/article-view', ['article' => $article]);
+    return view('pages/article-view', [
+        'article' => $article
+    ]);
 
 })->where('article','[A-z_\-0-9]+')->name('cheat-sheet.article');
