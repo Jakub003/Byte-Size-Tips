@@ -13,7 +13,11 @@
 
         <x-slot name="content">
 
-
+            <div class="prose">
+                @foreach ($articles as $article)
+                    {!! $article !!}
+                @endforeach
+            </div>
         </x-slot>
 
         <x-slot name="navigation">

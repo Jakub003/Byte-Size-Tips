@@ -1,23 +1,28 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\CheatSheet;
 
 
 Route::get('/', function () { return view('pages/home'); })->name('home');
-Route::get('/roadmap', function () { return view('pages/home'); })->name('roadmap');
+Route::get('/roadmap', function () { return view('pages/roadmap'); })->name('roadmap');
 Route::get('/components', function () { return view('pages/home'); })->name('components');
 Route::get('/demos', function () { return view('pages/home'); })->name('demos');
-Route::get('/cheat-sheet', function () { return view('pages/cheat-sheet'); })->name('cheat-sheet');
+
+Route::get('/cheat-sheet', function () {
+    $articles = CheatSheet::all();
+
+    return view('pages/cheat-sheet', [
+        'articles' => $articles
+    ]);
+
+})->name('cheat-sheet');
 
 Route::get('/cheat-sheet/{article}/', function ($slug) {
-    $path = __DIR__."/../resources/views/posts/{$slug}.blade.php";
+    $article = CheatSheet::find($slug);
 
-    if(! file_exists($path)) {
-        return redirect('/');
-    }
+    return view('pages/article-view', [
+        'article' => $article
+    ]);
 
-    $article = file_get_contents($path);
-
-    return view('pages/article-view', ['article' => $article]);
-
-})->name('cheat-sheet.article');
+})->where('article','[A-z_\-0-9]+')->name('cheat-sheet.article');

@@ -8,36 +8,15 @@
                     <p class="text-xl font-extrabold text-slate-800">Byte Size Tips</p>
                 </div>
             </a>
-            <div class="flex space-x-20">
-                <div class="hidden md:-my-px md:ml-6 md:flex md:space-x-8">
-                    <a href="{{ route('home') }}"
-                        class=" inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium {{ Request::routeIs('home')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}"
-                        aria-current="page">
-                        Home
-                    </a>
-                    {{-- <a href="#"
-                        class=" inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium {{ Request::routeIs('roadmap')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}"
-                        aria-current="page">
-                        Roadmap
-                    </a>
-                    <a href="#"
-                        class=" inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium {{ Request::routeIs('components')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}"
-                        aria-current="page">
-                        Components
-                    </a>
-                    <a href="#"
-                        class=" inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium {{ Request::routeIs('demos')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}"
-                        aria-current="page">
-                        Demos
-                    </a> --}}
-                    <a href="{{ route('cheat-sheet') }}"
-                        class=" inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium {{ Request::routeIs('cheat-sheet')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}"
-                        aria-current="page">
-                        Cheat Sheet
-                    </a>
-
-
-                </div>
+            <div class="flex space-x-6">
+                <a href="{{ route('home') }}"
+                    class=" inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium {{ Request::routeIs('home')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}">
+                    Home
+                </a>
+                <a href="{{ route('roadmap') }}"
+                    class=" inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium {{ Request::routeIs('roadmap')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}">
+                    Roadmap
+                </a>
                 <div class="hidden lg:ml-6 lg:flex lg:space-x-4 lg:items-center">
                     <x-button.dark-mode-toggle />
                     <a href="https://twitter.com/bytesizecoder" target="_blank" class="h-full flex items-center">
@@ -78,12 +57,12 @@
                     </button>
                 </div>
             </div>
-
+        </div>
     </section>
 
 
     <!-- Mobile menu, show/hide based on menu state. -->
-    <section x-cloak class="md:hidden" id="mobile-menu" x-show="mobileMenu === true">
+    {{-- <section x-cloak class="md:hidden" id="mobile-menu" x-show="mobileMenu === true">
         <div class="pt-2 pb-3 space-y-1">
             <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800" -->
             <a href="{{ route('home') }}"
@@ -93,5 +72,5 @@
             </a>
 
         </div>
-    </section>
+    </section> --}}
 </nav>
