@@ -34,12 +34,12 @@
             </a>
             <div class="hidden lg:flex lg:space-x-10 lg:items-center">
                 <div class="hidden lg:flex lg:space-x-6 h-16">
-                    <x-button.desktop-nav name="home" url="home" />
-                    <x-button.desktop-nav name="roadmap" url="roadmap" />
-                    <x-button.desktop-nav name="components" url="components" />
-                    <x-button.desktop-nav name="features" url="features" />
-                    <x-button.desktop-nav name="guides" url="guides" />
                     <x-button.desktop-nav name="cheat sheet" url="cheat-sheet" />
+                    <x-button.desktop-nav name="features" url="features" />
+                    <x-button.desktop-nav name="components" url="components" />
+                    <x-button.desktop-nav name="SASS roadmap" url="roadmap" />
+                    <x-button.desktop-nav name="Getting Started" url="guides" />
+
                 </div>
                 <div class="hidden lg:flex lg:space-x-4 lg:items-center">
                     <x-button.dark-mode-toggle />

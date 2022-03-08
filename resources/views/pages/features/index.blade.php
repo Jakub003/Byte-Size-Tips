@@ -1,7 +1,7 @@
 <x-template.guest>
     <x-template.article>
         <x-slot name="sidebar">
-            @include('pages.cheatsheet.sidebar')
+            @include('pages.features.sidebar')
         </x-slot>
 
         <x-slot name="content">
