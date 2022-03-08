@@ -6,7 +6,7 @@
 
         <x-slot name="content">
             <div>
-                Cheat Sheet
+                Components
             </div>
 
         </x-slot>

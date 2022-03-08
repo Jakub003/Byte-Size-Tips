@@ -13,7 +13,7 @@
     @endif
     @if (isset($content))
         <section class="w-[640px] flex flex-col space-y-10">
-            <div id="report" class="flex flex-col md:flex-row lg:space-y-0 space-y-4 justify-between md:items-center">
+            <div id="report" class="prose">
                 <h2 class="text-4xl font-bold">{!! $title !!}</h2>
             </div>
             <div class=" flex flex-col space-y-10">
