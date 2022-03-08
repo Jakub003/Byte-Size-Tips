@@ -33,13 +33,13 @@
                 </div>
             </a>
             <div class="hidden lg:flex lg:space-x-10 lg:items-center">
-                <div class="hidden lg:flex lg:space-x-4 h-16">
-                    <x-button.desktop-nav name="home" />
-                    <x-button.desktop-nav name="roadmap" />
-                    <x-button.desktop-nav name="components" />
-                    <x-button.desktop-nav name="features" />
-                    <x-button.desktop-nav name="guides" />
-                    <x-button.desktop-nav name="cheatsheet" />
+                <div class="hidden lg:flex lg:space-x-6 h-16">
+                    <x-button.desktop-nav name="home" url="home" />
+                    <x-button.desktop-nav name="roadmap" url="roadmap" />
+                    <x-button.desktop-nav name="components" url="components" />
+                    <x-button.desktop-nav name="features" url="features" />
+                    <x-button.desktop-nav name="guides" url="guides" />
+                    <x-button.desktop-nav name="cheat sheet" url="cheat-sheet" />
                 </div>
                 <div class="hidden lg:flex lg:space-x-4 lg:items-center">
                     <x-button.dark-mode-toggle />
@@ -125,7 +125,7 @@
                     <li> <a href="{{ route('components') }}"
                             class="px-4 text-gray-500 hover:text-white">Components</a> </li>
                     <li> <a href="{{ route('demos') }}" class="px-4 text-gray-500 hover:text-white">Demos</a></li>
-                    <li> <a href="{{ route('cheatsheet') }}" class="px-4 text-gray-500 hover:text-white">Cheat
+                    <li> <a href="{{ route('cheat-sheet') }}" class="px-4 text-gray-500 hover:text-white">Cheat
                             Sheet</a></li>
                 </ul>
             </div>

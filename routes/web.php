@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Models\Article;
 use App\Models\CheatSheet;
+use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () { return view('pages/home'); })->name('home');
@@ -11,17 +12,17 @@ Route::get('/guides', function () { return view('pages/roadmap'); })->name('guid
 Route::get('/components', function () { return view('pages/home'); })->name('components');
 Route::get('/demos', function () { return view('pages/home'); })->name('demos');
 
-Route::get('/cheat-sheets', function () {
-    $articles = CheatSheet::all();
+Route::get('/cheat-sheet', function () {
+    $articles = Article::all();
 
     return view('pages/cheat-sheet', [
         'articles' => $articles
     ]);
 
-})->name('cheatsheet');
+})->name('cheat-sheet');
 
 Route::get('/cheat-sheet/{article}/', function ($slug) {
-    $article = CheatSheet::find($slug);
+    $article = Article::find($slug);
 
     return view('pages/article-view', [
         'article' => $article

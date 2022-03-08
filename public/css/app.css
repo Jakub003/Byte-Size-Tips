@@ -2972,6 +2972,11 @@ select{
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
+  .lg\:space-x-6 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
   .lg\:border-gray-200{
     --tw-border-opacity: 1;
     border-color: rgb(229 231 235 / var(--tw-border-opacity));

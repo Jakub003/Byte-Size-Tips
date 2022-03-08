@@ -15,8 +15,8 @@
                         <p class="pr-5 mx-0 my-4 text-base text-left text-gray-500 xl:leading-9 lg:my-8 xl:text-xl">
                             Begin your journey through a world of endless possibilities with the Laravel framework.
                         </p>
-                        <div class="relative flex items-start justify-start block w-full max-w-md text-center lg:mx-0">
-                            <a href="{{ route('cheatsheet') }}"
+                        <div class="relative items-start justify-start block w-full max-w-md text-center lg:mx-0">
+                            <a href="{{ route('cheat-sheet') }}"
                                 class="flex items-center justify-center px-8 font-medium text-white bg-blue-500 rounded-full h-14">
                                 Cheat Sheet
                             </a>
