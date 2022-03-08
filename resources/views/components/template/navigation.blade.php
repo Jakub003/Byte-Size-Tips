@@ -1,4 +1,4 @@
-<nav class="bg-white border-b shadow-sm border-gray-200 w-full sticky top-0">
+<nav class="bg-white border-b shadow-sm border-gray-200 w-full">
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <a href="{{ route('home') }}" class="flex-shrink-0 flex space-x-4 items-center">
@@ -8,15 +8,10 @@
                     <p class="text-xl font-extrabold text-slate-800">Byte Size Tips</p>
                 </div>
             </a>
-            <div class="flex space-x-6">
-                <a href="{{ route('home') }}"
-                    class=" inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium {{ Request::routeIs('home')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}">
-                    Home
-                </a>
-                <a href="{{ route('roadmap') }}"
-                    class=" inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium {{ Request::routeIs('roadmap')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}">
-                    Roadmap
-                </a>
+            <div class="flex space-x-6 items-center">
+                <div class="flex space-x-4 items-center">
+                    <x-button.desktop-nav name="home" />
+                </div>
                 <div class="hidden lg:ml-6 lg:flex lg:space-x-4 lg:items-center">
                     <x-button.dark-mode-toggle />
                     <a href="https://twitter.com/bytesizecoder" target="_blank" class="h-full flex items-center">
@@ -33,7 +28,7 @@
                         </svg>
                     </a>
                 </div>
-                <div class="-mr-2 flex items-center sm:hidden">
+                {{-- <div class="-mr-2 flex items-center sm:hidden">
                     <!-- Mobile menu button -->
                     <button type="button" @click="mobileMenu = !mobileMenu"
                         class="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
@@ -55,7 +50,7 @@
 
 
                     </button>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
