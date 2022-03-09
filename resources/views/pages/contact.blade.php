@@ -1,3 +1,3 @@
 <x-template.guest>
-    {{ $article }}
+    Contact Form
 </x-template.guest>

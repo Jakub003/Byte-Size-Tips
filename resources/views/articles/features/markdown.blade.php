@@ -1,4 +1,4 @@
-<x-template.article title="Artisan Commands">
+<x-template.article title="Markdown">
     <x-slot name="content">
         <div>
             Artisan Commands

@@ -1,8 +1,9 @@
 @props([
     'name' => 'Article',
     'url' => 'home',
+    'route' => 'cheat-sheet',
 ])
-<a {{ $attributes }} href="#"
-    class="text-base  {{ Request::routeIs($url)? 'text-blue-500 font-bold': 'text-slate-500  hover:text-blue-500 hover:font-bold font-medium' }}">
+<a href="{{ route($route, $url) }}"
+    class="{{ Request::is('*' . $url . '*')? 'text-blue-500 font-bold text-lg': 'text-slate-500  hover:text-blue-500 font-medium text-base' }}">
     {{ $name }}
 </a>

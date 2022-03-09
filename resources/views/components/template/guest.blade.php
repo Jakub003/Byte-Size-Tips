@@ -20,7 +20,7 @@
     </style>
 </head>
 
-<body class="font-kumbh min-h-full relative overflow-x-hidden" x-data="{mobileMenu:false, darkMode:false}">
+<body class="font-kumbh min-h-screen relative overflow-x-hidden" x-data="{mobileMenu:false, darkMode:false}">
     {{-- <x-template.navigation /> --}}
     <nav class="bg-white border-b shadow-sm border-gray-200 w-full h-16 sticky top-0 z-40">
         <div class="flex justify-between h-16  max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,17 +33,33 @@
                 </div>
             </a>
             <div class="hidden lg:flex lg:space-x-10 lg:items-center">
-                <div class="hidden lg:flex lg:space-x-6 h-16">
-                    <div class="h-full">
-                        <a href="{{ route('cheat-sheet', 'artisan-commands') }}"
+                <div class="hidden lg:flex lg:space-x-10 h-16">
+                    <div class="h-full  lg:flex lg:space-x-4">
+                        <a href="{{ route('cheat-sheet', 'quick-commands') }}"
                             class=" h-full inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium capitalize {{ Request::routeIs('cheat-sheet*')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}">
                             Cheat Sheet
+                        </a>
+                        <a href="{{ route('features', 'markdown') }}"
+                            class=" h-full inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium capitalize {{ Request::routeIs('features*')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}">
+                            Markdown
+                        </a>
+                        <a href="{{ route('components', 'tips-and-tricks') }}"
+                            class=" h-full inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium capitalize {{ Request::routeIs('components*')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}">
+                            Components
+                        </a>
+                        <a href="{{ route('roadmap', 'overview') }}"
+                            class=" h-full inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium capitalize {{ Request::routeIs('roadmap*')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}">
+                            SASS Roadmap
+                        </a>
+                        <a href="{{ route('getting-started', 'introduction') }}"
+                            class=" h-full inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium capitalize {{ Request::routeIs('getting-started*')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}">
+                            Getting Started
                         </a>
                     </div>
 
                 </div>
                 <div class="hidden lg:flex lg:space-x-4 lg:items-center">
-                    <x-button.dark-mode-toggle />
+                    {{-- <x-button.dark-mode-toggle /> --}}
                     <a href="https://twitter.com/bytesizecoder" target="_blank" class="h-full flex items-center">
                         <svg fill="currentColor" class="text-blue-400 hover:text-blue-500 h-6 w-6" viewBox="0 0 16 16">
                             <path
@@ -117,15 +133,16 @@
                 <p class="order-last text-sm leading-tight text-gray-500 md:order-first">
                     Crafted with ❤️ by
                     <a href="https://dreambytelabs.com/" class="text-white">DreamByte Labs</a>.
-
                 </p>
                 <ul class="flex flex-row justify-center pb-3 -ml-4 -mr-4 text-sm">
                     <li> <a href="{{ route('home') }}" class="px-4 text-gray-500 hover:text-white">Home</a> </li>
-                    <li> <a href="{{ route('roadmap') }}" class="px-4 text-gray-500 hover:text-white">Roadmap</a>
+                    <li> <a href="{{ route('contact') }}" class="px-4 text-gray-500 hover:text-white">Contact</a>
+                    </li>
+                    {{-- <li> <a href="{{ route('roadmap') }}" class="px-4 text-gray-500 hover:text-white">Roadmap</a>
                     </li>
                     <li> <a href="{{ route('components') }}"
                             class="px-4 text-gray-500 hover:text-white">Components</a> </li>
-                    <li> <a href="{{ route('demos') }}" class="px-4 text-gray-500 hover:text-white">Demos</a></li>
+                    <li> <a href="{{ route('demos') }}" class="px-4 text-gray-500 hover:text-white">Demos</a></li> --}}
                     {{-- <li> <a href="{{ route('cheat-sheet', 'aritsan-commands') }}"
                             class="px-4 text-gray-500 hover:text-white">Cheat
                             Sheet</a></li> --}}
