@@ -34,11 +34,12 @@
             </a>
             <div class="hidden lg:flex lg:space-x-10 lg:items-center">
                 <div class="hidden lg:flex lg:space-x-6 h-16">
-                    <x-button.desktop-nav name="cheat sheet" url="cheat-sheet" />
-                    <x-button.desktop-nav name="features" url="features" />
-                    <x-button.desktop-nav name="components" url="components" />
-                    <x-button.desktop-nav name="SASS roadmap" url="roadmap" />
-                    <x-button.desktop-nav name="Getting Started" url="guides" />
+                    <div class="h-full">
+                        <a href="{{ route('cheat-sheet', 'artisan-commands') }}"
+                            class=" h-full inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium capitalize {{ Request::routeIs('cheat-sheet*')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}">
+                            Cheat Sheet
+                        </a>
+                    </div>
 
                 </div>
                 <div class="hidden lg:flex lg:space-x-4 lg:items-center">
@@ -125,8 +126,9 @@
                     <li> <a href="{{ route('components') }}"
                             class="px-4 text-gray-500 hover:text-white">Components</a> </li>
                     <li> <a href="{{ route('demos') }}" class="px-4 text-gray-500 hover:text-white">Demos</a></li>
-                    <li> <a href="{{ route('cheat-sheet') }}" class="px-4 text-gray-500 hover:text-white">Cheat
-                            Sheet</a></li>
+                    {{-- <li> <a href="{{ route('cheat-sheet', 'aritsan-commands') }}"
+                            class="px-4 text-gray-500 hover:text-white">Cheat
+                            Sheet</a></li> --}}
                 </ul>
             </div>
         </div>

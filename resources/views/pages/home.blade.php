@@ -16,7 +16,7 @@
                             Begin your journey through a world of endless possibilities with the Laravel framework.
                         </p>
                         <div class="relative items-start justify-start block w-full max-w-md text-center lg:mx-0">
-                            <a href="{{ route('cheat-sheet') }}"
+                            <a href="{{ route('cheat-sheet', 'artisan-commands') }}"
                                 class="flex items-center justify-center px-8 font-medium text-white bg-blue-500 rounded-full h-14">
                                 Cheat Sheet
                             </a>

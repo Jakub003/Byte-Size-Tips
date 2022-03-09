@@ -19,9 +19,9 @@ class Article
 
     }
 
-    public static function find($slug)
+    public static function cheatsheetArticle($slug)
     {
-        $path = resource_path("/views/posts/{$slug}.blade.php");
+        $path = resource_path("/views/articles/cheat-sheet/{$slug}.blade.php");
 
         if(! file_exists($path)) {
            throw new ModelNotFoundException();

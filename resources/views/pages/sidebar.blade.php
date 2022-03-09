@@ -1,4 +1,4 @@
-<div class="flex flex-col space-y-6 overflow-y-auto">
+<div class="flex flex-col space-y-6">
     <div class="flex flex-col space-y-1.5">
         <h2 class="text-sm text-slate-300 font-bold uppercase">Cheat Sheet</h2>
         <x-button.menu-item name="Artisan Commands" />
