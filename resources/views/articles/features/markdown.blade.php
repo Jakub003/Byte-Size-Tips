@@ -1,8 +1,8 @@
 <x-template.article title="Markdown">
     <x-slot name="content">
-        <div>
-            Artisan Commands
-        </div>
+        <pre><x-torchlight-code language='php'>
+            echo "Hello World!";
+        </x-torchlight-code></pre>
     </x-slot>
 
     <x-slot name="navigation">
