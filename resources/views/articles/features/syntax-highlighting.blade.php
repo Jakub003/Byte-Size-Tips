@@ -1,4 +1,4 @@
-<x-template.article title="Markdown">
+<x-template.article title="Syntax Highlihting">
     <x-slot name="content">
         <pre><x-torchlight-code language='php'>
             return [

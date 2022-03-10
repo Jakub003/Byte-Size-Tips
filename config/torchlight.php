@@ -11,7 +11,7 @@ return [
 
     // Which theme you want to use. You can find all of the themes at
     // https://torchlight.dev/docs/themes.
-    'theme' => env('TORCHLIGHT_THEME', 'material-theme-palenight'),
+    'theme' => env('TORCHLIGHT_THEME', 'moonlight'),
 
     // If you want to use two separate themes for dark and light modes,
     // you can use an array to define both themes. Torchlight renders
@@ -47,7 +47,7 @@ return [
     // https://torchlight.dev/docs/options
     'options' => [
         // Turn line numbers on or off globally.
-        'lineNumbers' => false,
+        // 'lineNumbers' => false,
 
         // Control the `style` attribute applied to line numbers.
         // 'lineNumbersStyle' => '',
