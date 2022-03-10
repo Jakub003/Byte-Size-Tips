@@ -13,6 +13,7 @@
             <div class="prose">
                 {{ $content }}
             </div>
+
         </section>
         <section class="hidden lg:block w-1/6 relative">
             <div class="flex flex-col space-y-10 sticky top-24">

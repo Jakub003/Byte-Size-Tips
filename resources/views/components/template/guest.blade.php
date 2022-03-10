@@ -134,6 +134,11 @@
                     Crafted with ❤️ by
                     <a href="https://dreambytelabs.com/" class="text-white">DreamByte Labs</a>.
                 </p>
+                <p class="text-sm text-gray-400 text-center">
+                    Code highlighting provided by
+                    <a href="https://torchlight.dev" target="__blank"
+                        class="text-slate-300 hover:text-orange-400 font-semibold">Torchlight</a>
+                </p>
                 <ul class="flex flex-row justify-center pb-3 -ml-4 -mr-4 text-sm">
                     <li> <a href="{{ route('home') }}" class="px-4 text-gray-500 hover:text-white">Home</a> </li>
                     <li> <a href="{{ route('contact') }}" class="px-4 text-gray-500 hover:text-white">Contact</a>

@@ -1,14 +1,18 @@
 <x-template.article title="Markdown">
     <x-slot name="content">
         <pre><x-torchlight-code language='php'>
-            return [
-                'extensions' => [
-                    // Add attributes straight from markdown.
-                    AttributesExtension::class,
-                    // Add Torchlight syntax highlighting. [tl! focus]
-                    TorchlightExtension::class, // [tl! focus]
-                ]
-            ]
+            <template x-for="heading in headings">
+                <li class="text-sm text-gray-600" :class="if (heading.tagName.toLowerCase() === 'h3') { return 'ml-4' } else if (heading.tagName.toLowerCase() === 'h4') { return 'ml-8' }">
+                    <a :href="'#'+heading.id" class="hover:text-gray-900" :class="visibleHeadingId == heading.id &amp;&amp; 'font-medium text-gray-900'" x-text="heading.innerText"></a>
+                </li>
+            </template>
+        </x-torchlight-code></pre>
+        <pre><x-torchlight-code language='php'>
+            <template x-for="heading in headings">
+                <li class="text-sm text-gray-600" :class="if (heading.tagName.toLowerCase() === 'h3') { return 'ml-4' } else if (heading.tagName.toLowerCase() === 'h4') { return 'ml-8' }">
+                    <a :href="'#'+heading.id" class="hover:text-gray-900" :class="visibleHeadingId == heading.id &amp;&amp; 'font-medium text-gray-900'" x-text="heading.innerText"></a>
+                </li>
+            </template>
         </x-torchlight-code></pre>
         <div>
             <h3 id="section-1">Section 1</h3>

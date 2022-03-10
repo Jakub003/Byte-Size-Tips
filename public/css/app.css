@@ -2315,6 +2315,14 @@ pre code.torchlight .line-number, pre code.torchlight .summary-caret{
   --tw-text-opacity: 1;
   color: rgb(233 213 255 / var(--tw-text-opacity));
 }
+.text-orange-400{
+  --tw-text-opacity: 1;
+  color: rgb(251 146 60 / var(--tw-text-opacity));
+}
+.text-orange-300{
+  --tw-text-opacity: 1;
+  color: rgb(253 186 116 / var(--tw-text-opacity));
+}
 .underline{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -2521,6 +2529,10 @@ pre code.torchlight .line-number, pre code.torchlight .summary-caret{
 .hover\:text-blue-700:hover{
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+.hover\:text-orange-400:hover{
+  --tw-text-opacity: 1;
+  color: rgb(251 146 60 / var(--tw-text-opacity));
 }
 .hover\:shadow-sm:hover{
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
