@@ -35,13 +35,17 @@
             <div class="hidden lg:flex lg:space-x-10 lg:items-center">
                 <div class="hidden lg:flex lg:space-x-10 h-16">
                     <div class="h-full  lg:flex lg:space-x-4">
+                        <a href="{{ route('getting-started', 'introduction') }}"
+                            class=" h-full inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium capitalize {{ Request::routeIs('getting-started*')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}">
+                            Getting Started
+                        </a>
                         <a href="{{ route('cheat-sheet', 'quick-commands') }}"
                             class=" h-full inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium capitalize {{ Request::routeIs('cheat-sheet*')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}">
                             Cheat Sheet
                         </a>
-                        <a href="{{ route('features', 'markdown') }}"
+                        <a href="{{ route('features', 'syntax-highlighting') }}"
                             class=" h-full inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium capitalize {{ Request::routeIs('features*')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}">
-                            Markdown
+                            Features
                         </a>
                         <a href="{{ route('components', 'tips-and-tricks') }}"
                             class=" h-full inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium capitalize {{ Request::routeIs('components*')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}">
@@ -50,10 +54,6 @@
                         <a href="{{ route('roadmap', 'overview') }}"
                             class=" h-full inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium capitalize {{ Request::routeIs('roadmap*')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}">
                             SASS Roadmap
-                        </a>
-                        <a href="{{ route('getting-started', 'introduction') }}"
-                            class=" h-full inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium capitalize {{ Request::routeIs('getting-started*')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}">
-                            Getting Started
                         </a>
                     </div>
 

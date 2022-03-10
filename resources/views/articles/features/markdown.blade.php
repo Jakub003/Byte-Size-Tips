@@ -1,11 +1,11 @@
 <x-template.article title="Markdown">
     <x-slot name="content">
         <pre><x-torchlight-code language='php'>
-            <template x-for="heading in headings">
-                <li class="text-sm text-gray-600" :class="if (heading.tagName.toLowerCase() === 'h3') { return 'ml-4' } else if (heading.tagName.toLowerCase() === 'h4') { return 'ml-8' }">
-                    <a :href="'#'+heading.id" class="hover:text-gray-900" :class="visibleHeadingId == heading.id &amp;&amp; 'font-medium text-gray-900'" x-text="heading.innerText"></a>
-                </li>
-            </template>
+<template x-for="heading in headings">
+    <li class="text-sm text-gray-600" :class="if (heading.tagName.toLowerCase() === 'h3') { return 'ml-4' } else if (heading.tagName.toLowerCase() === 'h4') { return 'ml-8' }">
+        <a :href="'#'+heading.id" class="hover:text-gray-900" :class="visibleHeadingId == heading.id &amp;&amp; 'font-medium text-gray-900'" x-text="heading.innerText"></a>
+    </li>
+</template>
         </x-torchlight-code></pre>
         <pre><x-torchlight-code language='php'>
             <template x-for="heading in headings">

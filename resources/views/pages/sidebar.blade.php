@@ -1,5 +1,14 @@
 <div class="flex flex-col space-y-6">
     <div class="flex flex-col space-y-1.5">
+        <h2 class="text-sm text-slate-300 font-bold uppercase">Getting Started</h2>
+        <x-button.menu-item name="Introduction" route="getting-started" url="introduction" />
+        {{-- <x-button.menu-item name="HTML and CSS Basics" />
+        <x-button.menu-item name="Data Science" />
+        <x-button.menu-item name="PHP" />
+        <x-button.menu-item name="Laravel Basics" />
+        <x-button.menu-item name="Javascript Basics" /> --}}
+    </div>
+    <div class="flex flex-col space-y-1.5">
         <h2 class="text-sm text-slate-300 font-bold uppercase">Cheat Sheet</h2>
         <x-button.menu-item name="Quick Commands" route="cheat-sheet" url="quick-commands" />
         <x-button.menu-item name=" Database Migrations" route="cheat-sheet" url="database-migrations" />
@@ -16,7 +25,8 @@
         {{-- <x-button.menu-item name="Drag and Drop" /> --}}
         {{-- <x-button.menu-item name="File Uploads" /> --}}
         {{-- <x-button.menu-item name="Dark Mode Toggle" /> --}}
-        <x-button.menu-item name="Markdown" route="features" url="markdown" />
+        {{-- <x-button.menu-item name="Markdown" route="features" url="markdown" /> --}}
+        <x-button.menu-item name="Syntax Highlighting" route="features" url="syntax-highlighting" />
         <x-button.menu-item name="Discord Webhooks" route="features" url="discord-webhooks" />
     </div>
     <div class="flex flex-col space-y-1.5">
@@ -38,14 +48,6 @@
         <x-button.menu-item name="Email Notifications" />
         <x-button.menu-item name="Marketing" /> --}}
     </div>
-    <div class="flex flex-col space-y-1.5">
-        <h2 class="text-sm text-slate-300 font-bold uppercase">Getting Started</h2>
-        <x-button.menu-item name="Introduction" route="getting-started" url="introduction" />
-        {{-- <x-button.menu-item name="HTML and CSS Basics" />
-        <x-button.menu-item name="Data Science" />
-        <x-button.menu-item name="PHP" />
-        <x-button.menu-item name="Laravel Basics" />
-        <x-button.menu-item name="Javascript Basics" /> --}}
-    </div>
+
 
 </div>
