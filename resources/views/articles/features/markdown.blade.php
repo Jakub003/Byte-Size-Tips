@@ -1,6 +1,6 @@
 <x-template.article title="Markdown">
     <x-slot name="content">
-        <x-torchlight-code language='php' theme="material-theme-palenight">
+        <x-torchlight-code language='php' theme="material-theme-palenight" class="px-4 rounded-lg">
             echo "Hello World!";
             test
         </x-torchlight-code>
