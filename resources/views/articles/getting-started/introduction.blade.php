@@ -1,25 +1,12 @@
 <x-template.article title="Introduction">
     <x-slot name="content">
-        <div>
-            Artisan Commands
-        </div>
+        <h3 id="basics">Basics</h3>
+        <p>Quick guide on the key points you need to learn to get started with building laravel projects. Links to best
+            resources ect.</p>
     </x-slot>
 
     <x-slot name="navigation">
-        <a href="#hype-rating" class="text-sm text-slate-400  hover:text-slate-700 hover:font-bold font-medium">
-            Hype Rating
-        </a>
-        <a href="#hype-rating" class="text-sm text-slate-400  hover:text-slate-700 hover:font-bold font-medium">
-            Hype Rating
-        </a>
-        <a href="#hype-rating" class="text-sm text-slate-400  hover:text-slate-700 hover:font-bold font-medium">
-            Hype Rating
-        </a>
-        <a href="#hype-rating" class="text-sm text-slate-400  hover:text-slate-700 hover:font-bold font-medium">
-            Hype Rating
-        </a>
-        <a href="#hype-rating" class="text-sm text-slate-400  hover:text-slate-700 hover:font-bold font-medium">
-            Hype Rating
-        </a>
+        <x-button.page-item name="Basics" url="basics" />
+
     </x-slot>
 </x-template.article>

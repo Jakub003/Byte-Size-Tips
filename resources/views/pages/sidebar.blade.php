@@ -1,4 +1,4 @@
-<div class="flex flex-col space-y-6">
+<div class="flex flex-col space-y-6 overflow-y-auto">
     <div class="flex flex-col space-y-1.5">
         <h2 class="text-sm text-slate-300 font-bold uppercase">Getting Started</h2>
         <x-button.menu-item name="Introduction" route="getting-started" url="introduction" />
@@ -48,6 +48,5 @@
         <x-button.menu-item name="Email Notifications" />
         <x-button.menu-item name="Marketing" /> --}}
     </div>
-
 
 </div>
