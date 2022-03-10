@@ -2,9 +2,6 @@
     <x-slot name="content">
         <x-torchlight-code language='php' theme="material-theme-palenight">
             echo "Hello World!";
-            <div id="report">
-                <h2 class="text-4xl font-bold">{!! $title !!}</h2>
-            </div>
         </x-torchlight-code>
     </x-slot>
 
