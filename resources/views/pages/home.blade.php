@@ -3,7 +3,6 @@
     <section class="pt-24 pb-32 bg-white">
         <div class="px-8 mx-auto max-w-7xl lg:px-12 xl:px-16">
             <div class="flex flex-col lg:flex-row">
-
                 <!-- Left Content -->
                 <div class="flex items-center w-full lg:w-1/2 lg:pr-10">
                     <div
