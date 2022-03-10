@@ -7,7 +7,7 @@
             @include('pages.sidebar')
         </section>
         <section class="w-[640px] flex flex-col space-y-10">
-            <div id="report" class="prose">
+            <div id="report">
                 <h2 class="text-4xl font-bold">{!! $title !!}</h2>
             </div>
             <div class=" flex flex-col space-y-10">
