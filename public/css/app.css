@@ -1278,9 +1278,6 @@ select{
 .mt-16{
   margin-top: 4rem;
 }
-.mr-1{
-  margin-right: 0.25rem;
-}
 .ml-8{
   margin-left: 2rem;
 }
@@ -1292,6 +1289,9 @@ select{
 }
 .mb-1{
   margin-bottom: 0.25rem;
+}
+.mr-1{
+  margin-right: 0.25rem;
 }
 .box-border{
   box-sizing: border-box;
@@ -1368,11 +1368,11 @@ select{
 .h-0{
   height: 0px;
 }
-.h-3{
-  height: 0.75rem;
-}
 .h-64{
   height: 16rem;
+}
+.h-3{
+  height: 0.75rem;
 }
 .min-h-screen{
   min-height: 100vh;
@@ -1431,14 +1431,14 @@ select{
 .w-\[640px\]{
   width: 640px;
 }
+.w-2\/5{
+  width: 40%;
+}
 .w-11{
   width: 2.75rem;
 }
 .w-3{
   width: 0.75rem;
-}
-.w-2\/5{
-  width: 40%;
 }
 .min-w-0{
   min-width: 0px;
@@ -1850,13 +1850,13 @@ select{
   --tw-bg-opacity: 1;
   background-color: rgb(147 51 234 / var(--tw-bg-opacity));
 }
-.bg-purple-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(126 34 206 / var(--tw-bg-opacity));
-}
 .bg-blue-50{
   --tw-bg-opacity: 1;
   background-color: rgb(239 246 255 / var(--tw-bg-opacity));
+}
+.bg-purple-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(126 34 206 / var(--tw-bg-opacity));
 }
 .bg-opacity-25{
   --tw-bg-opacity: 0.25;
@@ -2028,9 +2028,6 @@ select{
 .pb-28{
   padding-bottom: 7rem;
 }
-.pt-0{
-  padding-top: 0px;
-}
 .pt-8{
   padding-top: 2rem;
 }
@@ -2045,6 +2042,9 @@ select{
 }
 .pl-8{
   padding-left: 2rem;
+}
+.pt-0{
+  padding-top: 0px;
 }
 .text-left{
   text-align: left;
@@ -2258,14 +2258,6 @@ select{
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
 }
-.text-purple-100{
-  --tw-text-opacity: 1;
-  color: rgb(243 232 255 / var(--tw-text-opacity));
-}
-.text-purple-200{
-  --tw-text-opacity: 1;
-  color: rgb(233 213 255 / var(--tw-text-opacity));
-}
 .text-blue-700{
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity));
@@ -2273,6 +2265,14 @@ select{
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.text-purple-100{
+  --tw-text-opacity: 1;
+  color: rgb(243 232 255 / var(--tw-text-opacity));
+}
+.text-purple-200{
+  --tw-text-opacity: 1;
+  color: rgb(233 213 255 / var(--tw-text-opacity));
 }
 .underline{
   -webkit-text-decoration-line: underline;
