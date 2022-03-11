@@ -26,7 +26,7 @@ php artisan make:model BookNote // not BookNotes
 
 // create model with migration and factory seeder
 php artisan make:model Book -mf
-            </x-torchlight-code></pre>
+        </x-torchlight-code></pre>
         </div>
 
         <div id="database-migrations">

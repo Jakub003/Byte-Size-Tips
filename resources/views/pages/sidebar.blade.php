@@ -16,7 +16,7 @@
         <x-button.menu-item name="Eloquent Queries" route="cheat-sheet" url="eloquent-queries" />
         <x-button.menu-item name="Blade Components" route="cheat-sheet" url="blade-components" />
         {{-- <x-button.menu-item name="Livewire Components" route="cheat-sheet" url="livewire-components" /> --}}
-        <x-button.menu-item name="UI/UX Resources" route="cheat-sheet" url="ui-ux-resources" />
+        <x-button.menu-item name="Resources" route="cheat-sheet" url="resources" />
     </div>
 
     <div class="flex flex-col space-y-1.5">
