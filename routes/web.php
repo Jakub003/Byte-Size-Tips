@@ -6,8 +6,14 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () { return view('pages/home'); })->name('home');
+Route::get('/test2', function () { return view('/markdown/test2'); })->name('home2');
 Route::get('/contact', function () { return view('pages/contact'); })->name('contact');
 
+Route::get('/test/{article}', function ($slug) {
+    $test = Article::test($slug);
+    return view('test',['test' => $test]);
+
+})->where('article','[A-z_\-0-9]+')->name('test');
 
 Route::get('/cheat-sheet/{article}', function ($slug) {
     $path = resource_path("/views/articles/cheat-sheet/{$slug}.blade.php");

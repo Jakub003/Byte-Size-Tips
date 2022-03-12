@@ -20,7 +20,7 @@ class CheatSheet
 
     public static function find($slug)
     {
-        $path = resource_path("/views/posts/{$slug}.blade.php");
+        $path = resource_path("/views/markdown/{$slug}.md");
 
         if(! file_exists($path)) {
            throw new ModelNotFoundException();

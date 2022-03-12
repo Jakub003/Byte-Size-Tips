@@ -8,12 +8,12 @@
                 @include('pages.sidebar')
             </div>
         </section>
-        <section class="w-full lg:w-[640px] flex flex-col space-y-10 px-4 lg:px-0">
+        <section class="w-full lg:w-[640px] flex flex-col space-y-4 px-4 lg:px-0">
             <div id="report">
                 <h2 class="text-4xl font-bold">{!! $title !!}</h2>
             </div>
             <div class="prose">
-                {{ $content }}
+                @markdown($slot)
             </div>
 
         </section>
@@ -21,7 +21,22 @@
             <div class="flex flex-col space-y-10 sticky top-24">
                 <div class="flex flex-col space-y-2">
                     <h2 class="text-sm text-slate-300 font-bold">ON THIS PAGE</h2>
-                    {{ $navigation }}
+                    <a href="#hype-rating"
+                        class="text-sm text-slate-400  hover:text-slate-700 hover:font-bold font-medium">
+                        Section
+                    </a>
+                    <a href="#hype-rating"
+                        class="text-sm text-slate-400  hover:text-slate-700 hover:font-bold font-medium">
+                        Section
+                    </a>
+                    <a href="#hype-rating"
+                        class="text-sm text-slate-400  hover:text-slate-700 hover:font-bold font-medium">
+                        Section
+                    </a>
+                    <a href="#hype-rating"
+                        class="text-sm text-slate-400  hover:text-slate-700 hover:font-bold font-medium">
+                        Section
+                    </a>
                 </div>
             </div>
         </section>
