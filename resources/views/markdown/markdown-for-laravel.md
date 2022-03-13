@@ -128,6 +128,36 @@ Open `resources\css\app.css` and the following styling
 Run `npm run watch` or `npm run dev` and everything should work.
 
 ## Commonmark Extensions
+You can extend the functionality of markdown with your own package or using some of the CommonMark packages from the documentation.
+- https://commonmark.thephpleague.com/2.2/extensions/overview/
+
+For packages that are on that list you just need to go to `markdown.php` and add a new item in the `extensions` section.
+
+### Autolinks
+We will add `Autolinks` as an example. https://commonmark.thephpleague.com/2.2/extensions/autolinks/
+
+In the documentation you will see `usage` and take a look at how it is setup.
+```php
+use League\CommonMark\Environment\Environment;
+use League\CommonMark\Extension\Autolink\AutolinkExtension;
+use League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension;
+use League\CommonMark\MarkdownConverter;
+...
+```
+We are focusing only on extension line
+```php
+use League\CommonMark\Extension\Autolink\AutolinkExtension;
+```
+Now we can go to `markdown.php` file and find the extensions section. We duplicate the line for `Table\TableExtension` and replace it with `Autolink\AutolinkExtension`. The code will look like the example below.
+
+```php
+'extensions' => [
+        League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension::class,
+        League\CommonMark\Extension\Table\TableExtension::class,
+        Torchlight\Commonmark\V2\TorchlightExtension::class,
+        League\CommonMark\Extension\Autolink\AutolinkExtension::class,
+    ],
+```
 
 <!-- ## Blog Setup
 
