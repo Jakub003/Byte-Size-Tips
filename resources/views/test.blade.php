@@ -1,3 +1,3 @@
 <x-template.article title="Blade Components">
-    {{ $test }}
+    {!! $test !!}
 </x-template.article>
