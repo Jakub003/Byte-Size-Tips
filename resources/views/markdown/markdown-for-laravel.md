@@ -1,9 +1,9 @@
-# Laravel Markdown
+# Markdown for Laravel
 This is a complete guide on how to implement markdown into your Laravel project for a variety of scenarios. We will first start out with installing markdown, and getting it configured.
 
 Than we will go trough a few scenarios that you might want to use markdown for.
 
-## Initial Setup
+## Laravel Markdown
 We are going to be using the Laravel Markdown package by Graham Cambell
 - https://github.com/GrahamCampbell/Laravel-Markdown
 
@@ -18,7 +18,7 @@ Now will need to publish the vendor files
 php artisan vendor:publish
 ```
 You may be asked to select which files to publish, be sure to publish `GrahamCampbell\Markdown\MarkdownServiceProvider`
-## Code Highlighting
+## Torchlight
 Next, we need to install code highlighting with torchlight. Be sure to provide attribution if you do not have the premium version of torchlight to help support the project team that has developed this package.
 - https://torchlight.dev/docs/clients/commonmark-php
 
@@ -59,18 +59,77 @@ php artisan torchlight:install
 ```
 You are done! Check out the full docs for more configuration options https://torchlight.dev/docs/clients/laravel but you can now use the blade component in your laravel project wherever it may be needed.
 
-### Markdown Code Highlighting
+### Markdown Highlighting
+If you want to use the torchlight style code highlighting in the Laravel Markdown package, than you will need to setup the commonmark extension for it.
+- https://torchlight.dev/docs/clients/commonmark-php
+
+First we install it with composer
 ```php
 composer require torchlight/torchlight-commonmark
 ```
+Next we need to enable the extension in the package. Open `markdown.php` and add `Torchlight\Commonmark\V2\TorchlightExtension::class,`
+```php
+    'extensions' => [
+        Torchlight\Commonmark\V2\TorchlightExtension::class,
+        ...
+    ],
+```
+You need to publish the config file with
+```php
+php artisan torchlight:install
+```
 
-## Resources
-### Laracasts Series
+### Tailwind CSS Config
+If you are using Tailwind, you have an extra step to make sure everything looks good. You
+- https://torchlight.dev/docs/CSS
+
+Open `resources\css\app.css` and the following styling
+```css
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+    /*
+    Margin and rounding are personal preferences,
+    overflow-x-auto is recommended.
+    */
+    pre {
+        @apply my-4 rounded overflow-x-auto;
+    }
+
+    /*
+    Add some vertical padding and expand the width
+    to fill its container. The horizontal padding
+    comes at the line level so that background
+    colors extend edge to edge.
+    */
+    pre code.torchlight {
+        @apply block py-4 min-w-max;
+    }
+
+    /*
+    Horizontal line padding.
+    */
+    pre code.torchlight .line {
+        @apply px-4;
+    }
+
+    /*
+    Push the code away from the line numbers and
+    summary caret indicators.
+    */
+    pre code.torchlight .line-number,
+    pre code.torchlight .summary-caret {
+        @apply mr-4;
+    }
+}
+```
+Run `npm run watch` or `npm run dev` and everything should work.
+
+## Commonmark Extensions
+
+<!-- ## Blog Setup
+
 Great series on Laracasts that provides more guidance and clarification on how to make the dynamic posts work.
-- https://laracasts.com/series/laravel-8-from-scratch/episodes/8
-
-### Laravel Markdown Packages
-- https://github.com/GrahamCampbell/Laravel-Markdown
-
-### Code Highlighting by Torchlight
-- https://torchlight.dev/
+- https://laracasts.com/series/laravel-8-from-scratch/episodes/8 -->
