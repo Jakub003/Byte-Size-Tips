@@ -43,7 +43,7 @@
                             class=" h-full inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium capitalize {{ Request::routeIs('cheat-sheet*')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}">
                             Cheat Sheet
                         </a>
-                        <a href="{{ route('features', 'syntax-highlighting') }}"
+                        <a href="{{ route('features', 'markdown-for-laravel') }}"
                             class=" h-full inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium capitalize {{ Request::routeIs('features*')? 'border-indigo-500 text-gray-900': 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }}">
                             Features
                         </a>

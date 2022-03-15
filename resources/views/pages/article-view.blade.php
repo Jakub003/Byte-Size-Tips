@@ -8,7 +8,7 @@
         <section class="w-full lg:w-[640px] flex flex-col space-y-4 px-4 lg:px-0">
 
             <div class="prose">
-                @markdown($slot)
+                @markdown($article)
             </div>
 
         </section>
