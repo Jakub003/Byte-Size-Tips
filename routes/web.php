@@ -2,6 +2,7 @@
 
 use App\Models\Article;
 use App\Models\CheatSheet;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
 
 
@@ -62,3 +63,9 @@ Route::get('/test/{article}', function ($slug) {
     return view('test',['test' => $test]);
 
 })->where('article','[A-z_\-0-9]+')->name('test');
+
+Route::get('/all', function () {
+    $files = Article::all();
+    dd($files[0]->getFilename());
+
+})->name('test3');

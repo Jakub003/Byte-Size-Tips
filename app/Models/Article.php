@@ -10,13 +10,7 @@ class Article
 {
     public static function all()
     {
-        $files = File::files(resource_path("/views/posts/"));
-
-        return array_map(function ($file) {
-            return $file->getContents();
-        }, $files);
-
-
+        return File::files(resource_path('/views/articles/cheat-sheet/'));
     }
 
     public static function cheatsheetArticle($slug)
@@ -42,7 +36,6 @@ class Article
         }
 
         return cache()->remember("article.{$slug}", 0, function() use($path) {
-
              return file_get_contents($path);
         });
         // return cache()->remember("article.{$slug}",5,fn() => file_get_contents($path));
