@@ -53,3 +53,12 @@ Route::get('/getting-started/{article}', function ($slug) {
      return view('articles/getting-started/'.$slug);
 
 })->where('article','[A-z_\-0-9]+')->name('getting-started');
+
+// test
+Route::get('/test2', function () { return view('/markdown/test2'); })->name('home2');
+
+Route::get('/test/{article}', function ($slug) {
+    $test = Article::test($slug);
+    return view('test',['test' => $test]);
+
+})->where('article','[A-z_\-0-9]+')->name('test');

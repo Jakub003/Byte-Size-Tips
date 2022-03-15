@@ -32,4 +32,19 @@ class Article
         });
         // return cache()->remember("article.{$slug}",5,fn() => file_get_contents($path));
     }
+
+    public static function test($slug)
+    {
+        $path = resource_path("/views/markdown/{$slug}.md");
+
+        if(! file_exists($path)) {
+           throw new ModelNotFoundException();
+        }
+
+        return cache()->remember("article.{$slug}", 0, function() use($path) {
+
+             return file_get_contents($path);
+        });
+        // return cache()->remember("article.{$slug}",5,fn() => file_get_contents($path));
+    }
 }

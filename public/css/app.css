@@ -1274,6 +1274,9 @@ pre code.torchlight .line-number, pre code.torchlight .summary-caret{
 .mb-4{
   margin-bottom: 1rem;
 }
+.-mt-px{
+  margin-top: -1px;
+}
 .ml-8{
   margin-left: 2rem;
 }
@@ -1490,6 +1493,9 @@ pre code.torchlight .line-number, pre code.torchlight .summary-caret{
 .max-w-xl{
   max-width: 36rem;
 }
+.max-w-6xl{
+  max-width: 72rem;
+}
 .max-w-lg{
   max-width: 32rem;
 }
@@ -1498,9 +1504,6 @@ pre code.torchlight .line-number, pre code.torchlight .summary-caret{
 }
 .max-w-3xl{
   max-width: 48rem;
-}
-.max-w-6xl{
-  max-width: 72rem;
 }
 .flex-1{
   flex: 1 1 0%;
@@ -1717,6 +1720,11 @@ pre code.torchlight .line-number, pre code.torchlight .summary-caret{
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
 .overflow-hidden{
   overflow: hidden;
 }
@@ -1789,14 +1797,14 @@ pre code.torchlight .line-number, pre code.torchlight .summary-caret{
 .border-b{
   border-bottom-width: 1px;
 }
+.border-r{
+  border-right-width: 1px;
+}
 .border-b-4{
   border-bottom-width: 4px;
 }
 .border-l{
   border-left-width: 1px;
-}
-.border-r{
-  border-right-width: 1px;
 }
 .border-solid{
   border-style: solid;
@@ -1819,6 +1827,10 @@ pre code.torchlight .line-number, pre code.torchlight .summary-caret{
 .border-gray-100{
   --tw-border-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
+}
+.border-gray-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 .border-indigo-500{
   --tw-border-opacity: 1;
@@ -2048,6 +2060,9 @@ pre code.torchlight .line-number, pre code.torchlight .summary-caret{
 .pb-1{
   padding-bottom: 0.25rem;
 }
+.pt-8{
+  padding-top: 2rem;
+}
 .pt-24{
   padding-top: 6rem;
 }
@@ -2065,9 +2080,6 @@ pre code.torchlight .line-number, pre code.torchlight .summary-caret{
 }
 .pb-28{
   padding-bottom: 7rem;
-}
-.pt-8{
-  padding-top: 2rem;
 }
 .pt-12{
   padding-top: 3rem;
@@ -2186,11 +2198,11 @@ pre code.torchlight .line-number, pre code.torchlight .summary-caret{
 .tracking-widest{
   letter-spacing: 0.1em;
 }
-.tracking-wide{
-  letter-spacing: 0.025em;
-}
 .tracking-wider{
   letter-spacing: 0.05em;
+}
+.tracking-wide{
+  letter-spacing: 0.025em;
 }
 .text-gray-500{
   --tw-text-opacity: 1;
@@ -2256,6 +2268,14 @@ pre code.torchlight .line-number, pre code.torchlight .summary-caret{
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
+.text-gray-200{
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+.text-gray-300{
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
 .text-slate-800{
   --tw-text-opacity: 1;
   color: rgb(30 41 59 / var(--tw-text-opacity));
@@ -2291,10 +2311,6 @@ pre code.torchlight .line-number, pre code.torchlight .summary-caret{
 .text-purple-500{
   --tw-text-opacity: 1;
   color: rgb(168 85 247 / var(--tw-text-opacity));
-}
-.text-gray-200{
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 .text-blue-700{
   --tw-text-opacity: 1;
@@ -2662,6 +2678,12 @@ pre code.torchlight .line-number, pre code.torchlight .summary-caret{
 .disabled\:opacity-25:disabled{
   opacity: 0.25;
 }
+@media (prefers-color-scheme: dark){
+  .dark\:bg-gray-900{
+    --tw-bg-opacity: 1;
+    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  }
+}
 @media (min-width: 640px){
   .sm\:col-span-4{
     grid-column: span 4 / span 4;
@@ -2770,6 +2792,9 @@ pre code.torchlight .line-number, pre code.torchlight .summary-caret{
   }
   .sm\:items-center{
     align-items: center;
+  }
+  .sm\:justify-start{
+    justify-content: flex-start;
   }
   .sm\:justify-center{
     justify-content: center;
@@ -3031,6 +3056,10 @@ pre code.torchlight .line-number, pre code.torchlight .summary-caret{
     padding-left: 5rem;
     padding-right: 5rem;
   }
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   .lg\:py-24{
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -3038,10 +3067,6 @@ pre code.torchlight .line-number, pre code.torchlight .summary-caret{
   .lg\:px-16{
     padding-left: 4rem;
     padding-right: 4rem;
-  }
-  .lg\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
   }
   .lg\:pr-10{
     padding-right: 2.5rem;

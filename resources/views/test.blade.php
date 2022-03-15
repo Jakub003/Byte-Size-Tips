@@ -1,7 +1,3 @@
 <x-template.article title="Blade Components">
-    # test
-    example content
-    ```
-    example
-    ```
+    {!! $test !!}
 </x-template.article>
