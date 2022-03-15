@@ -6,11 +6,9 @@
             </div>
         </section>
         <section class="w-full lg:w-[640px] flex flex-col space-y-4 px-4 lg:px-0">
-            {{ ltrim(Request::url(), 'http://bytesize.test/') }}
             <div class="prose">
                 @markdown($article)
             </div>
-
         </section>
         <section class="hidden lg:block w-1/6 relative">
             <div class="flex flex-col space-y-6 sticky top-24">
