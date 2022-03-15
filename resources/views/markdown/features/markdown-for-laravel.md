@@ -1,5 +1,5 @@
 # Markdown for Laravel
-This is a complete guide on how to implement markdown into your Laravel project for a variety of scenarios. We will first start out with installing markdown, and getting it configured. Update
+This is a complete guide on how to implement markdown into your Laravel project for a variety of scenarios. We will first start out with installing markdown, and getting it configured.
 
 Than we will go trough a few scenarios that you might want to use markdown for.
 
