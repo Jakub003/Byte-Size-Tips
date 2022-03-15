@@ -27,9 +27,9 @@ class Article
         // return cache()->remember("article.{$slug}",5,fn() => file_get_contents($path));
     }
 
-    public static function test($slug)
+    public static function find($category,$slug)
     {
-        $path = resource_path("/views/markdown/{$slug}.md");
+        $path = resource_path("/views/markdown/{$category}/{$slug}.md");
 
         if(! file_exists($path)) {
            throw new ModelNotFoundException();

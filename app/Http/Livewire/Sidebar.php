@@ -12,11 +12,15 @@ class Sidebar extends Component
     public $componentArticles = [];
     public $roadmapArticles = [];
 
-    // public function mount()
-    // {
-    //     $this->articles = File::files(resource_path('/views/articles/'));
+    public function mount()
+    {
+        $this->gettingStartedArticles = File::files(resource_path('/views/markdown/getting-started/'));
+        $this->cheatSheetArticles = File::files(resource_path('/views/markdown/cheat-sheet/'));
+        $this->featureArticles = File::files(resource_path('/views/markdown/features/'));
+        $this->componentArticles = File::files(resource_path('/views/markdown/components/'));
+        $this->roadmapArticles = File::files(resource_path('/views/markdown/roadmap/'));
 
-    // }
+    }
 
     public function render()
     {
