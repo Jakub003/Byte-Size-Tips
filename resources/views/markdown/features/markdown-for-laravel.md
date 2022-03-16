@@ -159,6 +159,24 @@ Now we can go to `markdown.php` file and find the extensions section. We duplica
     ],
 ```
 
+### Adding Attributes
+Enabling attributes will allow you to add custom classes to elements and add ids, which you can link too with anchor tags. It comes very handy if you want to make documentation style markdown pages.
+
+Just need to add this to the `markdown.php` file
+```php
+ League\CommonMark\Extension\Attributes\AttributesExtension::class,
+```
+
+These are the two new syntax you will be a ble to use.
+```php
+// adding custom classes
+## Header {.header-name}
+ <h2 class="header-name">Header</h2>
+
+// adding attributes
+## Header{#header-name}
+<h2 id="header-name">Header</h2>
+```
 <!-- ## Blog Setup
 
 Great series on Laracasts that provides more guidance and clarification on how to make the dynamic posts work.

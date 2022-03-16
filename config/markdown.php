@@ -52,6 +52,7 @@ return [
         Torchlight\Commonmark\V2\TorchlightExtension::class,
         League\CommonMark\Extension\ExternalLink\ExternalLinkExtension::class,
         League\CommonMark\Extension\TaskList\TaskListExtension::class,
+        League\CommonMark\Extension\Attributes\AttributesExtension::class,
     ],
 
     /*
