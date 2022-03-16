@@ -3,7 +3,7 @@ This is a complete guide on how to implement markdown into your Laravel project 
 
 Than we will go trough a few scenarios that you might want to use markdown for.
 
-## Laravel Markdown
+## Laravel Markdown {#laravel-markdown}
 We are going to be using the Laravel Markdown package by Graham Cambell
 - https://github.com/GrahamCampbell/Laravel-Markdown
 
@@ -18,11 +18,11 @@ Now will need to publish the vendor files
 php artisan vendor:publish
 ```
 You may be asked to select which files to publish, be sure to publish `GrahamCampbell\Markdown\MarkdownServiceProvider`
-## Torchlight
+## Torchlight {#torchlight}
 Next, we need to install code highlighting with torchlight. Be sure to provide attribution if you do not have the premium version of torchlight to help support the project team that has developed this package.
 - https://torchlight.dev/docs/clients/commonmark-php
 
-### Installing Blade Component
+### Installing Blade Component {#installing-blade-component}
 This will let you use the torchlight blade component in any file directly without having to do markdown syntax.
 - https://torchlight.dev/docs/clients/laravel
 ```php
@@ -59,7 +59,7 @@ php artisan torchlight:install
 ```
 You are done! Check out the full docs for more configuration options https://torchlight.dev/docs/clients/laravel but you can now use the blade component in your laravel project wherever it may be needed.
 
-### Markdown Highlighting
+### Markdown Highlighting {#markdown-highlighting}
 If you want to use the torchlight style code highlighting in the Laravel Markdown package, than you will need to setup the commonmark extension for it.
 - https://torchlight.dev/docs/clients/commonmark-php
 
@@ -79,7 +79,7 @@ You need to publish the config file with
 php artisan torchlight:install
 ```
 
-### Tailwind CSS Config
+### Tailwind CSS Config {#tailwind-css-config}
 If you are using Tailwind, you have an extra step to make sure everything looks good. You
 - https://torchlight.dev/docs/CSS
 
@@ -127,13 +127,13 @@ Open `resources\css\app.css` and the following styling
 ```
 Run `npm run watch` or `npm run dev` and everything should work.
 
-## Commonmark Extensions
+## Commonmark Extensions {#commonmark-extensions}
 You can extend the functionality of markdown with your own package or using some of the CommonMark packages from the documentation.
 - https://commonmark.thephpleague.com/2.2/extensions/overview/
 
 For packages that are on that list you just need to go to `markdown.php` and add a new item in the `extensions` section.
 
-### Autolinks
+### Autolinks {#autolinks}
 We will add `Autolinks` as an example. https://commonmark.thephpleague.com/2.2/extensions/autolinks/
 
 In the documentation you will see `usage` and take a look at how it is setup.
@@ -159,7 +159,7 @@ Now we can go to `markdown.php` file and find the extensions section. We duplica
     ],
 ```
 
-### Adding Attributes
+### Adding Attributes {#adding-attributes}
 Enabling attributes will allow you to add custom classes to elements and add ids, which you can link too with anchor tags. It comes very handy if you want to make documentation style markdown pages.
 
 Just need to add this to the `markdown.php` file
